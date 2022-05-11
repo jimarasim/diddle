@@ -1,6 +1,6 @@
 # Wordle helper :)
 
-from english import ENGLISH_WORDS
+from english_words import english_words_set
 
 def helper(gren, yllo, ydct, grey):
 
@@ -22,7 +22,7 @@ def helper(gren, yllo, ydct, grey):
                 return False
         return True
      
-    wrds = ENGLISH_WORDS
+    wrds = english_words_set
     psbl = [] #possible
     for word in wrds:
         if inpsbl(word, gren, yllo, ydct, grey):
